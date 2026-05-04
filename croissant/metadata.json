@@ -50,7 +50,7 @@
   "conformsTo": "http://mlcommons.org/croissant/1.0",
   "name": "ResidualBench",
   "description": "ResidualBench is a benchmark for systematically comparing methods that discover forecast failure modes from residual windows. It includes pre-computed residuals from five forecasters (DLinear, PatchTST, iTransformer, N-BEATS, TimesNet) across nine named datasets (ETTh1, ETTh2, ETTm1, ETTm2, Weather, Electricity, Traffic, Exchange, ILI) and a Python harness implementing seven decomposition methods (PCA, Dense AE-16, Dense AE-64, k-means, TopK SAE, ICA, Spectral) under a proper train/test evaluation protocol with motif-level metrics validated against synthetic ground truth.",
-  "url": "https://huggingface.co/datasets/anonymous-residualbench/residualbench",
+  "url": "https://huggingface.co/datasets/EvalData/residualbench",
   "version": "0.1.0",
   "license": "https://opensource.org/licenses/MIT",
   "citeAs": "@inproceedings{residualbench2026, title={ResidualBench: A Benchmark and Evaluation Protocol for Cross-Model Forecast Failure Mode Discovery}, author={Anonymous}, booktitle={NeurIPS 2026 Evaluations and Datasets Track}, year={2026}}",
@@ -89,9 +89,9 @@
       "@id": "residualbench-package",
       "name": "residualbench-package",
       "description": "Pip-installable Python package implementing the fit/encode/reconstruct method protocol, motif-level metrics (cohesion, VR), Hungarian alignment, lag-1 / learned selectors, and the proper train/test harness.",
-      "contentUrl": "https://huggingface.co/datasets/anonymous-residualbench/residualbench/resolve/main/residualbench-0.1.0.tar.gz",
+      "contentUrl": "https://huggingface.co/datasets/EvalData/residualbench/resolve/main/residualbench-0.1.0.tar.gz",
       "encodingFormat": "application/gzip",
-      "md5": "PLACEHOLDER_MD5_TO_BE_FILLED_AT_RELEASE"
+      "md5": "861fa4ba9c0fa8a7bd3027eb2f8c9792"
     },
     {
       "@type": "cr:FileSet",
@@ -107,9 +107,9 @@
       "@id": "results-summary",
       "name": "results-summary",
       "description": "Aggregated benchmark results JSON: one row per (dataset, forecaster, method, seed) cell with cohesion, VR, and reconstruction MSE for the 855 reported configurations.",
-      "contentUrl": "https://huggingface.co/datasets/anonymous-residualbench/residualbench/resolve/main/all_results.json",
+      "contentUrl": "https://huggingface.co/datasets/EvalData/residualbench/resolve/main/results/all_results.json",
       "encodingFormat": "application/json",
-      "md5": "PLACEHOLDER_MD5_TO_BE_FILLED_AT_RELEASE"
+      "md5": "05b15308f0652c013aea85e9ac7d49e8"
     }
   ],
 
