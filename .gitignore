@@ -1,0 +1,55 @@
+# Python build / cache
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Environments
+.venv/
+venv/
+env/
+
+# Test / type / lint cache
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Data and large artifacts (downloaded by users via scripts/download_data.py)
+data/
+results/
+*.pt
+*.pth
+*.npy
+*.npz
+*.tar.gz
+*.zip
+
+# LaTeX build products (paper not in this repo, but defensive)
+*.aux
+*.log
+*.bbl
+*.blg
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# Local secrets / configs
+*.env
+.env*
+secrets/

@@ -1,0 +1,25 @@
+data:
+  train_dataset: results/hybrid/residual_dataset_train.pt
+  val_dataset: results/hybrid/residual_dataset_val.pt
+  test_dataset: results/hybrid/residual_dataset_test.pt
+  batch_size: 128
+
+model:
+  n_regimes: 64
+  d_hidden: 256
+  activation: topk
+  topk_k: 16
+
+training:
+  epochs: 20
+  learning_rate: 1.0e-3
+  weight_decay: 1.0e-5
+  patience: 5
+  grad_clip: 1.0
+
+loss:
+  sparsity_weight: 0.0
+  diversity_weight: 1.0e-3
+
+logging:
+  save_dir: results/regimes/residual_regime_autoencoder_topk_etth1

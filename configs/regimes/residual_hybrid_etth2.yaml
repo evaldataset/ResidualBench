@@ -1,0 +1,38 @@
+data:
+  dataset_name: ETTh2
+  data_path: data/ETTh2.csv
+  seq_len: 96
+  horizon: 96
+  batch_size: 64
+  num_workers: 0
+  train_ratio: 0.7
+  val_ratio: 0.1
+
+model:
+  type: hybrid
+  base_type: dlinear
+  concept_mode: sparse
+  n_concepts: 64
+  d_hidden: 256
+  init_threshold: 0.1
+  activation: jumprelu
+
+training:
+  epochs: 100
+  learning_rate: 1.0e-4
+  finetune_lr: 1.0e-5
+  weight_decay: 1.0e-5
+  patience: 10
+  grad_clip: 1.0
+
+loss:
+  forecast_weight: 1.0
+  cc_weight: 0.0
+  cf_weight: 0.0
+  sparsity_weight: 1.0e-3
+
+logging:
+  project: conceptcast-regimes
+  log_every_n_steps: 50
+  save_dir: results/regimes/residual_hybrid_etth2
+  use_wandb: false

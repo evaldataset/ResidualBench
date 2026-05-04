@@ -1,0 +1,23 @@
+# Core
+torch>=2.0  # tested with 2.7.1+cu126
+numpy>=1.24  # tested with 2.2.6
+einops>=0.7  # tested with 0.8.2
+scipy>=1.11  # tested with 1.15.3
+pandas>=2.0  # tested with 2.3.3
+scikit-learn>=1.4  # tested with 1.6.1
+
+# Config & logging
+pyyaml>=6.0
+wandb>=0.16
+tqdm>=4.66
+
+# Visualization
+matplotlib>=3.8
+seaborn>=0.13
+
+# Dev
+pytest>=7.4
+pytest-cov>=4.1
+ruff>=0.3
+mypy>=1.8
+ipykernel>=6.27

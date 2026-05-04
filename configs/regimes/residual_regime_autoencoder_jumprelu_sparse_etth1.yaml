@@ -1,0 +1,26 @@
+data:
+  train_dataset: results/hybrid/residual_dataset_train.pt
+  val_dataset: results/hybrid/residual_dataset_val.pt
+  test_dataset: results/hybrid/residual_dataset_test.pt
+  batch_size: 128
+
+model:
+  n_regimes: 64
+  d_hidden: 256
+  activation: jumprelu
+  init_threshold: 0.3
+  topk_k: 10
+
+training:
+  epochs: 20
+  learning_rate: 1.0e-3
+  weight_decay: 1.0e-5
+  patience: 5
+  grad_clip: 1.0
+
+loss:
+  sparsity_weight: 5.0e-3
+  diversity_weight: 1.0e-3
+
+logging:
+  save_dir: results/regimes/residual_regime_autoencoder_jumprelu_sparse_etth1
